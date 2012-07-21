@@ -153,13 +153,4 @@ public class Processor implements Runnable {
 		return list;
 	}
 
-	public static void main(String str[]){
-		String userName = "eloquent.eliza";
-		String accessToken = "AAACuzRr6cdUBAHC8qtVYRxkMyqrTc7i833U8HWPnkrhjjm1WZCEkKByyDlH1IuQXyiiD9tfxS6PUIjGkZAnTppCLIiWqfE9WFUKbZC4QgZDZD";
-		Facebook facebook = new Facebook(userName, accessToken);
-
-		Processor processor = new Processor(facebook);
-		processor.setEliza(new ElizaMain());
-		processor.run();
-	}
 }
